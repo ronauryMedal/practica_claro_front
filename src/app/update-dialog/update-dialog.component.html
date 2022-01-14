@@ -1,0 +1,38 @@
+<h1 mat-dialog-title>actualizar</h1>
+<div matDialogContent> 
+   <form  >
+        <mat-grid-list cols="2" rowHeight="2:1">
+            <mat-grid-tile>
+                <mat-form-field>
+                    <mat-label>titulo</mat-label>
+                    <input matInput  name="titulo" [(ngModel)]="titulo" >
+                </mat-form-field>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <mat-form-field>
+                    <mat-label>descripcion</mat-label>
+                    <input matInput name="descripcion" [(ngModel)]="descripcion" >
+                </mat-form-field>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <mat-form-field>
+                    <mat-label>autor</mat-label>
+                    <input matInput name="autor" [(ngModel)]="autor" >
+                </mat-form-field>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <mat-form-field>
+                    <mat-label>editora</mat-label>
+                    <input matInput name="editora" [(ngModel)]="editora">
+                </mat-form-field>
+            </mat-grid-tile>
+        </mat-grid-list>
+        <div matDialogActions>
+            <button type="submit" color="primary" (click)=" acualizar()"  mat-raised-button><mat-icon>update</mat-icon></button>
+            <button   color="warn" (click)="close()" mat-raised-button><mat-icon>close</mat-icon></button>
+        </div>
+   </form>
+   
+</div>
+
+

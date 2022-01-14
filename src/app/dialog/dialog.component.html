@@ -1,0 +1,37 @@
+<h1 mat-dialog-title>agregar libro</h1>
+<div matDialogContent> 
+   <form [formGroup]="newLibro" (submit)="AddLibro()">
+        <mat-grid-list cols="2" rowHeight="2:1">
+            <mat-grid-tile>
+                <mat-form-field>
+                    <mat-label>titulo</mat-label>
+                    <input matInput formControlName="titulo">
+                </mat-form-field>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <mat-form-field>
+                    <mat-label>descripcion</mat-label>
+                    <input matInput formControlName="descripcion">
+                </mat-form-field>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <mat-form-field>
+                    <mat-label>autor</mat-label>
+                    <input matInput formControlName="autor">
+                </mat-form-field>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <mat-form-field>
+                    <mat-label>editora</mat-label>
+                    <input matInput formControlName="editora">
+                </mat-form-field>
+            </mat-grid-tile>
+        </mat-grid-list>
+        <div matDialogActions>
+            <button type="submit" color="primary" [disabled]="!newLibro.valid" mat-raised-button><mat-icon>library_add</mat-icon></button>
+            <button   color="warn" (click)="close()" mat-raised-button><mat-icon>close</mat-icon></button>
+        </div>
+   </form>
+   
+</div>
+
