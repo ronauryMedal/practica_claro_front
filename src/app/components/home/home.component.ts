@@ -7,6 +7,7 @@ import {MatDialog}from '@angular/material/dialog'
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Libro } from 'src/app/models/libro';
 import { UpdateDialogComponent } from '../../update-dialog/update-dialog.component';
+import { DetailsComponent } from 'src/app/details/details.component';
 
 @Component({
   selector: 'app-home',
@@ -73,4 +74,10 @@ export class HomeComponent implements OnInit {
     })
   }
 
+  OpenDetails(item:Libro){
+      const dialogreft=this.dialog.open(DetailsComponent,{
+        data:item,
+        width:"500px"
+      })
+  }
 }

@@ -1,0 +1,21 @@
+<h1 class="text-center" mat-dialog-title><b>DETAILS</b></h1>
+
+<mat-dialog-content>
+    titulo:<h2> {{titulo}} </h2>
+
+
+    descripcion:
+    <p><b>{{descripcion}}</b></p>
+
+    autor:
+    <h2>{{autor}}</h2>
+
+    editora:
+    <h2>{{editora}}</h2>
+
+
+</mat-dialog-content>
+
+<div matDialogActions>
+    <button   color="warn" (click)="close()" mat-raised-button><mat-icon>close</mat-icon></button>
+</div>

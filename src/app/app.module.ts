@@ -16,7 +16,8 @@ import {MatSnackBarModule}from '@angular/material/snack-bar';
 import { DialogComponent } from './dialog/dialog.component'
 import {MatGridListModule}from'@angular/material/grid-list'
 import {FormsModule,ReactiveFormsModule}from'@angular/forms';
-import { UpdateDialogComponent } from './update-dialog/update-dialog.component'
+import { UpdateDialogComponent } from './update-dialog/update-dialog.component';
+import { DetailsComponent } from './details/details.component'
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { UpdateDialogComponent } from './update-dialog/update-dialog.component'
     HeaderComponent,
     HomeComponent,
     DialogComponent,
-    UpdateDialogComponent
+    UpdateDialogComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,
